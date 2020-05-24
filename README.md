@@ -1,2 +1,2 @@
-# yacck
-Minimal, classless CSS kit
+# YACCK
+YACCK - Yet Another Classless CSS Kit
