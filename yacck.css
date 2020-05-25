@@ -21,6 +21,7 @@ body{
     margin:0 auto;
     overflow-x: hidden;
     max-width: var(--width-content);
+    background-color: #f8f8f8;
 
     color: var(--color-gray);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
