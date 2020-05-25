@@ -5,7 +5,7 @@
     --color-gray: #343434;
     --color-med-gray: #8c8c8c;
     --color-light-gray: #f8f8f8;
-
+    --border-radius: 4px;
 }
 
 /* Layout */
@@ -138,7 +138,7 @@ kbd{
     display: inline-block;
     background-color: var(--color-light-gray);
     border: 1px solid #969696;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     color: #202020;
     padding: 1px 4px;
 }
@@ -175,10 +175,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     white-space: nowrap;
-}
-
-table, thead, tbody,tfoot,caption{
-    width:100%;
+    border: 1px solid var(--color-med-gray);
+    border-radius: var(--border-radius);
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    font-size: .9rem;
 }
 
 thead, tfoot{
@@ -195,13 +197,13 @@ tbody tr:nth-child(odd){
 }
 
 th, td{
-    border: 1px solid var(--color-gray);
-    padding: .5rem;
+    padding: .5rem .75rem;
     text-align: center;
 }
 
 table caption{
     caption-side: bottom;
     padding: .5rem;
-    font-size: .9rem;
+    font-size: .8rem;
+    text-align: right;
 }
