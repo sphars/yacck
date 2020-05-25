@@ -170,3 +170,38 @@ hr{
     border: 1px solid var(--color-med-gray); 
 }
 
+/* Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    white-space: nowrap;
+}
+
+table, thead, tbody,tfoot,caption{
+    width:100%;
+}
+
+thead, tfoot{
+    background-color: var(--color-primary);
+    color: var(--color-light-gray);
+}
+
+thead {
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd){
+    background: #dbdbdb;
+}
+
+th, td{
+    border: 1px solid var(--color-gray);
+    padding: .5rem;
+    text-align: center;
+}
+
+table caption{
+    caption-side: bottom;
+    padding: .5rem;
+    font-size: .9rem;
+}
