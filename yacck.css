@@ -6,8 +6,11 @@
     --color-med-gray: #8c8c8c;
     --color-light-gray: #f8f8f8;
     --color-bg-gray: #ececec;
-    --border-radius: 4px;
-    --font-monospace: Consolas, monospace;
+    --border-radius: 6px;
+
+    /* Fonts are TBD */
+    --font-family: Arial, sans-serif;
+    --font-monospace: monospace;
 }
 
 /* Layout */
@@ -26,7 +29,7 @@ body{
     background-color: #f8f8f8;
 
     color: var(--color-gray);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    font-family: var(--font-family);
 }
 
 header, nav, main, footer{
@@ -222,21 +225,63 @@ table caption{
 
 /* Forms */
 form{
-    border: 1px solid var(--color-med-gray);
+    /* border: 1px solid var(--color-med-gray);
     border-radius: var(--border-radius);
-    padding: .5rem 1rem;
+    padding: .5rem 1rem; */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset{
+    border-radius: var(--border-radius);
+    margin: .5rem 0;
 }
 
 div{
-    margin: 1rem .5rem;
+    margin: 1rem 0;
 }
 
 label{
     display: block;
 }
 
+label[for]{
+    font-weight: bold;
+}
+
 label span{
 }
 
-input{
+input, select, textarea{
+    min-width: 180px;
+    margin: 0;
+    padding: 6px;
+}
+
+input[type=checkbox], input[type=radio]{
+    min-width: 0;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+    form ul{
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    form ul li{
+        padding-left: 0;
+    }
+
+button{
+    background: var(--color-primary);
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .5rem;    
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-med-gray);
+    color: var(--color-bg-gray);
+    font-weight: bold;
+    font-family: var(--font-family);
 }
