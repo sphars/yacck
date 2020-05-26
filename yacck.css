@@ -141,7 +141,8 @@ pre{
     overflow-x: auto;
 }
 
-code{
+pre code{
+    display: block;
 }
 
 kbd{
@@ -217,4 +218,25 @@ table caption{
     padding: .5rem;
     font-size: .8rem;
     text-align: right;
+}
+
+/* Forms */
+form{
+    border: 1px solid var(--color-med-gray);
+    border-radius: var(--border-radius);
+    padding: .5rem 1rem;
+}
+
+div{
+    margin: 1rem .5rem;
+}
+
+label{
+    display: block;
+}
+
+label span{
+}
+
+input{
 }
