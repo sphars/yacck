@@ -5,7 +5,9 @@
     --color-gray: #343434;
     --color-med-gray: #8c8c8c;
     --color-light-gray: #f8f8f8;
+    --color-bg-gray: #ececec;
     --border-radius: 4px;
+    --font-monospace: Consolas, monospace;
 }
 
 /* Layout */
@@ -122,16 +124,24 @@ blockquote{
     border-left: 2px solid var(--color-primary);
     padding: .75rem 1rem .75rem 2rem;
     margin: 1rem 0;
-    background: #f6f6f6;
+    background: var(--color-bg-gray);
 }
 
 blockquote p{
     margin: 0;
 }
 
+pre, code, kbd{
+    font-family: var(--font-monospace);
+    font-size: .9em;
+}
+
 pre{
     white-space: wrap;
-    overflow-x: scroll;
+    overflow-x: auto;
+}
+
+code{
 }
 
 kbd{
@@ -141,6 +151,7 @@ kbd{
     border-radius: var(--border-radius);
     color: #202020;
     padding: 1px 4px;
+    font-size: .75rem;
 }
 
 q{
