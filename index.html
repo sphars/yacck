@@ -162,13 +162,19 @@ p q r s t u v w x y z { | } ~ </pre>
             <h1>Forms</h1>
             <form>
                 <h2>An Example Form</h2>
+                <p>Form elements should be a combination of a label and an input wrapped in a block-level element such as a <code>div</code>. Checkboxes and radio buttons should be wrapped in a <code>li</code> element, wrapped in a <code>ul</code> element.</p>
 
                 <fieldset>
-                    <legend>Basic Inputs</legend>
+                    <legend>Common Inputs</legend>
 
                     <div>
-                        <label for="textbox">Textbox</label>
-                        <input type="text" id="textbox" placeholder="Enter some text">
+                        <label for="text">Text</label>
+                        <input type="text" id="text" placeholder="Enter some text">
+                    </div>
+
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
                     </div>
 
                     <ul>
@@ -209,17 +215,17 @@ p q r s t u v w x y z { | } ~ </pre>
                         <label for="date">Date Picker</label>
                         <input type="date" id="date">
                     </div>
+
+                    <div>
+                        <label for="textarea">Textarea</label>
+                        <textarea id="textarea" rows="5" placeholder="Enter more text"></textarea>
+                    </div>
                     
                 </fieldset>
 
                 <fieldset>
-                    <legend>User Inputs</legend>
-                    
-                    <div>
-                        <label for="textarea">Textarea</label>
-                        <textarea id="textarea" rows="5" placeholder="Enter your information"></textarea>
-                    </div>
-                    
+                    <legend>Select Controls</legend>
+                                        
                     <div>
                         <label for="select">Select List</label>
                         <select id="select">
@@ -230,13 +236,33 @@ p q r s t u v w x y z { | } ~ </pre>
                     </div>
 
                     <div>
-                        <label for="multiselect">Multiselect Box</label>
-                        <select id="multiselect" multiple>
+                        <label for="multiselect">Multiselect List</label>
+                        <select id="multiselect" multiple size="4">
                             <option value="apple">Apple</option>
                             <option value="banana">Banana</option>
                             <option value="orange">Orange</option>
                             <option value="lime">Lime</option>
                         </select>
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Other Controls</legend>
+
+                    <div>
+                        <label for="color">Color</label>
+                        <input type="color" id="color">
+                    </div>
+
+                    <div>
+                        <label for="number">Number</label>
+                        <input type="number" id="number" min="0" max="100" step="1">
+                    </div>
+
+                    <div>
+                        <label for="range">Range</label>
+                        <input type="range" id="range" min="0" max="100" step="1">
                     </div>
                     
                     <div>
@@ -247,16 +273,12 @@ p q r s t u v w x y z { | } ~ </pre>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Other Controls</legend>
-                    
-                </fieldset>
-
-                <fieldset>
                     <legend>Buttons</legend>
 
                     <div>
                         <button type="submit">Submit</button>
                         <button type="button">Button</button>
+                        <button type="button" disabled>Disabled</button>
                     </div>
                 </fieldset>
             </form>

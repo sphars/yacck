@@ -1,5 +1,9 @@
 :root{
+    /* Sizing */
     --width-content: 1200px;
+    --width-form: 540px;
+
+    /* Colors */
     --color-primary: #437085;
     --color-secondary: #434f85;
     --color-gray: #343434;
@@ -124,7 +128,7 @@ p{
 }
 
 blockquote{
-    border-left: 2px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
     padding: .75rem 1rem .75rem 2rem;
     margin: 1rem 0;
     background: var(--color-bg-gray);
@@ -136,7 +140,6 @@ blockquote p{
 
 pre, code, kbd{
     font-family: var(--font-monospace);
-    font-size: .9em;
 }
 
 pre{
@@ -225,11 +228,12 @@ table caption{
 
 /* Forms */
 form{
-    /* border: 1px solid var(--color-med-gray);
+    border: 1px solid var(--color-med-gray);
     border-radius: var(--border-radius);
-    padding: .5rem 1rem; */
-    max-width: 600px;
-    margin: 0 auto;
+    padding: .5rem 1rem;
+    background: #fff;
+    max-width: var(--width-form);
+    margin: 0;
 }
 
 fieldset{
@@ -248,14 +252,16 @@ label{
 }
 
 input, select, textarea{
-    min-width: 200px;
+    width: 100%;
     margin: 0;
     padding: 6px;
+    box-sizing: border-box;
+    display:inline-block;
 }
 
 input[type=checkbox], input[type=radio]{
-    min-width: 0;
     margin-right: .5rem;
+    width: initial;
 }
 
 form ul{
@@ -285,4 +291,11 @@ button{
     color: var(--color-bg-gray);
     font-weight: bold;
     font-family: var(--font-family);
+    cursor: pointer;
+}
+
+button[disabled]{
+    background: var(--color-med-gray);
+    cursor: not-allowed;
+
 }
