@@ -163,85 +163,45 @@ p q r s t u v w x y z { | } ~ </pre>
             <form>
                 <h2>An Example Form</h2>
 
-                <div>
-                    <label for="textbox1">Textbox</label>
-                    <input type="text" id="textbox1" placeholder="Textbox">
-                </div>
-
-                <ul>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="" name="checkboxes">
-                            Checkbox 1
-                        </label>
-                    </li>
-                    
-                    <li>
-                        <label>
-                            <input type="checkbox" value="" name="checkboxes">
-                            Checkbox 2
-                        </label>
-                    </li>
-                    
-                    <li>
-                        <label>
-                            <input type="checkbox" value="" name="checkboxes">
-                            Checkbox 3
-                        </label>
-                    </li>
-                </ul>
-
                 <fieldset>
-                    <legend>Inputs</legend>
+                    <legend>Basic Inputs</legend>
 
                     <div>
                         <label for="textbox">Textbox</label>
-                        <input type="text" id="textbox" placeholder="Textbox">
+                        <input type="text" id="textbox" placeholder="Enter some text">
                     </div>
 
                     <ul>
                         <li>
-                            <label>
-                                <input type="checkbox" value="" name="checkboxes">
-                                Checkbox 1
-                            </label>
+                            <input id="check1" type="checkbox" value="" name="checkboxes">
+                            <label for="check1">Checkbox 1</label>
                         </li>
                         
                         <li>
-                            <label>
-                                <input type="checkbox" value="" name="checkboxes">
-                                Checkbox 2
-                            </label>
+                            <input id="check2" type="checkbox" value="" name="checkboxes">
+                            <label for="check2">Checkbox 2</label>
                         </li>
                         
                         <li>
-                            <label>
-                                <input type="checkbox" value="" name="checkboxes">
-                                Checkbox 3
-                            </label>
+                            <input id="check3" type="checkbox" value="" name="checkboxes">
+                            <label for="check3">Checkbox 3</label>
                         </li>
                     </ul>
 
                     <ul>
                         <li>
-                            <label>
-                                <input type="radio" value="" name="radios">
-                                Radio 1
-                            </label>
+                            <input id="radio1" type="radio" value="" name="radios">
+                            <label for="radio1">Radio 1</label>
                         </li>
                         
                         <li>
-                            <label>
-                                <input type="radio" value="" name="radios">
-                                Radio 2
-                            </label>
+                            <input id="radio2" type="radio" value="" name="radios">
+                            <label for="radio2">Radio 2</label>
                         </li>
                         
                         <li>
-                            <label>
-                                <input type="radio" value="" name="radios">
-                                Radio 3
-                            </label>
+                            <input id="radio3" type="radio" value="" name="radios">
+                            <label for="radio3">Radio 3</label>
                         </li>
                     </ul>
 
@@ -253,7 +213,7 @@ p q r s t u v w x y z { | } ~ </pre>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Other Inputs</legend>
+                    <legend>User Inputs</legend>
                     
                     <div>
                         <label for="textarea">Textarea</label>
@@ -268,11 +228,27 @@ p q r s t u v w x y z { | } ~ </pre>
                             <option value="">Option 3</option>
                         </select>
                     </div>
+
+                    <div>
+                        <label for="multiselect">Multiselect Box</label>
+                        <select id="multiselect" multiple>
+                            <option value="apple">Apple</option>
+                            <option value="banana">Banana</option>
+                            <option value="orange">Orange</option>
+                            <option value="lime">Lime</option>
+                        </select>
+                    </div>
                     
                     <div>
                         <label for="filePicker">File Picker</label>
                         <input type="file" id="filePicker">
                     </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Other Controls</legend>
+                    
                 </fieldset>
 
                 <fieldset>

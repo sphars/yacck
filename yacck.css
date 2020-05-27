@@ -243,17 +243,12 @@ div{
 
 label{
     display: block;
-}
-
-label[for]{
     font-weight: bold;
-}
-
-label span{
+    margin-bottom: .25rem;
 }
 
 input, select, textarea{
-    min-width: 180px;
+    min-width: 200px;
     margin: 0;
     padding: 6px;
 }
@@ -261,18 +256,24 @@ input, select, textarea{
 input[type=checkbox], input[type=radio]{
     min-width: 0;
     margin-right: .5rem;
-    margin-bottom: .5rem;
 }
 
-    form ul{
-        list-style: none;
-        padding-left: 0;
-        margin-left: 0;
-    }
+form ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
 
-    form ul li{
-        padding-left: 0;
-    }
+form ul li{
+    padding-left: 0;
+    margin-bottom: .25rem;
+}
+
+form ul li label{
+    font-weight: normal;
+    display:inline-block;
+    margin-bottom: 0;
+}
 
 button{
     background: var(--color-primary);
