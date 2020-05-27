@@ -201,7 +201,7 @@ table {
     font-size: .9rem;
 }
 
-thead, tfoot{
+thead{
     background-color: var(--color-primary);
     color: var(--color-light-gray);
 }
@@ -212,6 +212,12 @@ thead {
 
 tbody tr:nth-child(odd){
     background: #dbdbdb;
+}
+
+tfoot{
+    background: var(--color-med-gray);
+    color: var(--color-light-gray);
+    font-weight: bold;
 }
 
 th, td{
