@@ -11,7 +11,7 @@ Currently a work in progress.
 * Simple universal layout
 * Cross-browser support
 * Responsive
-* Accessible
+* Accessible (work in progress)
 * Customization
 
 ### Acknowledgements

@@ -8,7 +8,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
     <title>YACCK - Yet Another Classless CSS Kit</title>
 
     <link rel="stylesheet" type="text/css" href="yacck.css">
@@ -33,33 +32,40 @@
     <main>
         <section>
             <h1>YACCK - Yet Another Classless CSS Kit</h1>
-            <p>YACCK is a classless, responsive CSS kit (framework) that focuses on pure HTML semantic elements. It is inspired by many other similar minimal CSS frameworks, such as <a href="https://github.com/andybrewer/mvp">MVP.css</a>. It is intended to be used on simple websites and blogs.</p>
+            <p>YACCK is a <b>classless</b>, responsive CSS kit that focuses on pure HTML semantic elements. It is inspired by many other similar minimal CSS frameworks, such as <a href="https://github.com/andybrewer/mvp">MVP.css</a>. It is intended to be used on simple websites and blogs.</p>
         </section>
         
         <hr/>
 
         <section>
-            <h1>Headings</h1>
+            <h1>Text Elements</h1>
+            <h2>Headings</h2>
             <h1>Header 1</h1>
             <h2>Header 2</h2>
             <h3>Header 3</h3>
             <h4>Header 4</h4>
             <h5>Header 5</h5>
             <h6>Header 6</h6>
-        </section>
 
-        <section>
-            <h1>Paragraphs</h1>
+            <h2>Paragraphs</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque error magnam, debitis repellendus nulla. Possimus obcaecati ratione debitis, adipisci explicabo sequi, non temporibus itaque omnis veritatis sit est assumenda?</p>
-        </section>
 
-        <section>
-            <h1>Other Text Elements</h1>
+            <h2>Inline Text Elements</h2>
+            <ul>
+                <li><code>&lt;a&gt;</code>: <a href="https://www.somesillyexampleurl.com">I'm an unvisited anchor</a> and <a href="#">I'm a visited anchor</a></li>
+                <li><code>&lt;i&gt;</code>, <code>&lt;em&gt;</code>: <i>I have meaning!</i> and <em>I have emphasis!</em></li>
+                <li><code>&lt;b&gt;</code>, <code>&lt;strong&gt;</code>: <b>I'm bringing attention!</b> and <strong>I have importance!</strong></li>
+                <li><code>&lt;code&gt;</code>: <code>console.log("Hello!");</code></li>
+                <li><code>&lt;mark&gt;</code>: The following word is <mark>marked</mark>.</li>
+                <li><code>&lt;kbd&gt;</code>: <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd></li>
+                <li><code>&lt;q&gt;</code>: <q>I'm not superstitious but I am a little stitious.</q> - Michael Scott</li>
+    
+            </ul>
 
             <h2>Blockquotes</h2>
             <blockquote>
                 <p>Do I need to be liked? Absolutely not. I like to be liked. I enjoy being liked. I have to be liked, but it's not like this compulsive need to be liked, like my need to be praised.</p>
-                <cite><a href="#">Michael Scott</a></cite>
+                <footer>As quoted by <cite><a href="#">Michael Scott</a></cite>
             </blockquote>
 
             <h2>Preformatted Text</h2>
@@ -72,15 +78,13 @@ P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
 p q r s t u v w x y z { | } ~ </pre>
 
-            <h2>Code</h2>
+            <h2>Code Block</h2>
+            <p>Wrap your <code>&lt;code&gt;</code> element in a <code>&lt;pre&gt;</code> element to display it as a block.</p>
             <pre>
 <code>function SayHello() {
     return "Hello World!";
 }</code></pre>
 
-            <h2>Other</h2>
-            <p>Keyboard keys: <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd></p>
-            <p>Quote: <q>I'm not superstitious but I am a little stitious.</q> - Michael Scott</p>
         </section>
 
         <section>
@@ -114,6 +118,14 @@ p q r s t u v w x y z { | } ~ </pre>
         </section>
 
         <section>
+            <h1>Details</h1>
+            <details>
+                <summary>More Details</summary>
+                <p>This is the extra details you need to know.</p>
+            </details>
+        </section> 
+
+        <section>
             <h1>Horizontal Row</h1>
             <hr/>
         </section>
@@ -123,7 +135,7 @@ p q r s t u v w x y z { | } ~ </pre>
             <p>Note: I'd prefer to have the tables be full-width, with <code>overscroll-x</code> for large tables that expand beyond the viewport. However, without a wrapper around it, I haven't found clean CSS-only solution. A <code>div</code> wrapper can't be targeted via CSS without a class or adding some attribute. There may be a solution I am unaware of. For now, tables are full-width and if the table content is too large, the content will be clipped on as viewport width is reduced. This may change, depending how I feel about adding extra stuff.</p>
 
             <table>
-                <caption>This is a table caption.</caption>
+                <caption>This is a table of very important data.</caption>
                 <thead>
                     <tr>
                         <th>Column 1</th>
@@ -175,7 +187,7 @@ p q r s t u v w x y z { | } ~ </pre>
                 <h2>An Example Form</h2>
                 <p>Form elements should be a combination of a label and an input wrapped in a block-level element such as a <code>div</code>. Checkboxes and radio buttons should be wrapped in a <code>li</code> element, wrapped in a <code>ul</code> element.</p>
 
-                <p>Note: These inputs are not yet styled, other than adjusting the sizing. As soon as I figure out how to adjust the styles, I work on that.</p>
+                <p>Note: Most of these inputs are not yet styled, other than adjusting the sizing. As soon as I figure out how to adjust the styles, I work on that.</p>
 
                 <fieldset>
                     <legend>Common Inputs</legend>
@@ -187,7 +199,7 @@ p q r s t u v w x y z { | } ~ </pre>
 
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" autocomplete="current-password">
                     </div>
 
                     <div>
@@ -275,13 +287,11 @@ p q r s t u v w x y z { | } ~ </pre>
 
                     <div>
                         <label for="range">Range</label>
-                        <i>Not yet styled</i>
                         <input type="range" id="range" min="0" max="100" step="1">
                     </div>
                     
                     <div>
                         <label for="filePicker">File Picker</label>
-                        <i>Not yet styled</i>
                         <input type="file" id="filePicker">
                     </div>
 

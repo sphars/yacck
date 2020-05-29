@@ -1,27 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Rubik:ital,wght@0,400;0,500;1,400&display=swap');
+
 :root{
     /* Sizing */
     --width-content: 1200px;
-    --width-form: 540px;
+    --width-form: 600px;
     --border-radius: 6px;
 
     /* Colors */
-    --color-primary: #434f85;
-    --color-secondary: #437085;
-    --color-thirdly: #282c34;
-    --color-primary-tint: #5867ab;
-    --color-gray: #343434;
-    --color-med-gray: #696969;
+    --color-primary: #13293d;
+    --color-secondary: #434f85;
+    --color-thirdly: #3f4045;
+    --color-primary-tint: #6472b1;
+    --color-accent: #ffa630;
+    --color-gray: #3f4045;
+    --color-med-gray: #828489;
     --color-light-gray: #f8f8f8;
-    --color-bg: #f8f8f8;
+    --color-bg: #fdfdfd;
     --color-bg-med: #ececec;
 
-    /* Fonts are TBD */
-    --font-family: Arial, sans-serif;
-    --font-monospace: monospace;
+    --font-family: 'Rubik', Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-monospace: 'Inconsolata', Consolas, monospace;
     --font-base-size: 16px;
-    --font-color-dark: #343434;
+    --font-bold-weight: 500;
+    --font-color-dark: #272727;
     --font-color-light: #f8f8f8;
-    --font-color-med: #696969;
+    --font-color-med: #828489;
 }
 
 /* Layout */
@@ -55,12 +58,12 @@ header, nav, main, footer{
 }
 
 /* Header and Footer */
-header, footer{
+body > header, body > footer{
     background: var(--color-primary);
     color: var(--font-color-light);
 }
 
-header div, footer div{
+body > header div, body > footer div{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -68,43 +71,50 @@ header div, footer div{
     max-width: var(--width-content);
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: .25rem 1rem;
 }
 
-header a, footer a{
-    color: var(--font-color-light);
+body > header a, body > footer a{
+    color: var(--color-primary-tint);
 }
 
-header a:hover, footer a:hover{
-    color: var(--font-color-light);
+body > header a:hover, body > footer a:hover{
+    border-bottom: 2px solid var(--color-primary-tint);
     padding-bottom: 1px;
 }
 
-header a:visited, footer a:visited{
-    color: var(--font-color-light)
+body > header a:visited, body > footer a:visited{
+    color: var(--color-primary-tint);
 }
 
-header img{
+body > header a:visited:hover, body > footer a:visited:hover{
+    border-bottom: 2px solid var(--color-primary-tint);
+}
+
+
+body > header img{
     height: 50px;
     margin: .5rem 0;
 }
 
-header a:hover{
+body > header a[href="/"]:hover{
+    /* this takes care of the hover effect on the brand logo in the header */
     border: none;
     padding-bottom: 0;
+    filter: brightness(85%);
 }
 
-header p, footer p{
+body > header p, body > footer p{
     margin: .5rem 0;
 }
 
 /* Navigation */
-nav{
+body > nav{
     margin: 0 auto;
-    background: var(--color-thirdly);
+    background: var(--color-secondary);
 }
 
-nav ul{
+body > nav ul{
     max-width: var(--width-content);
     width: 100%;
     display: flex;
@@ -116,7 +126,7 @@ nav ul{
     margin: 0 auto;
 }
 
-nav ul li{
+body > nav ul li{
     display: inline-block;
     text-align: center;
     flex-grow: 1;
@@ -124,16 +134,21 @@ nav ul li{
     padding: 0;
 }
 
-nav ul li a{
+body > nav ul li a{
     color: var(--color-light-gray);
 }
 
-nav ul li a:visited{
+body > nav ul li a:visited{
     color: var(--color-light-gray);
 }
 
-nav ul li a:hover{
+body > nav ul li a:hover{
     color: var(--color-light-gray);
+}
+
+body > nav ul li a:visited:hover{
+    color: var(--color-light-gray);
+    border-bottom: 2px solid var(--color-light-gray);
 }
 
 /* Main content */
@@ -145,6 +160,7 @@ main{
 }
 
 /* Elements */
+h1,h2,h3,h4,h5,h6{font-weight: var(--font-bold-weight);}
 h1{font-size: 2rem;}
 h2{font-size: 1.75rem;}
 h3{font-size: 1.5rem;}
@@ -152,15 +168,15 @@ h4{font-size: 1.25rem;}
 h5{font-size: 1rem;}
 h6{font-size: .75rem;}
 
+b, strong{font-weight: var(--font-bold-weight);}
+
 a{
-    color: var(--color-primary);
+    color: var(--color-primary-tint);
     text-decoration: none;
 }
 
 a:hover{
-    color: var(--color-secondary);
     border-bottom: 2px solid var(--color-secondary);
-    padding-bottom: 1px;
 }
 
 a:visited {
@@ -184,7 +200,7 @@ blockquote p{
 
 pre, code, kbd{
     font-family: var(--font-monospace);
-    font-size: .875rem;
+    font-size: 1rem;
 }
 
 pre{
@@ -194,15 +210,19 @@ pre{
 
 pre code{
     display: block;
-    background: var(--color-thirdly);
+    background: var(--color-primary);
     color: var(--color-light-gray); 
-    border-left: 3px solid var(--color-secondary);
+    border-left: 4px solid var(--color-accent);
     padding: 1rem 2rem;
 }
 
-p code {
-    background: var(--color-bg-gray);
+code {
+    background: var(--color-bg-med);
     padding: 0 4px;
+}
+
+mark{
+    background-color: var(--color-accent);
 }
 
 kbd{
@@ -219,6 +239,20 @@ q{
     font-style: italic;
 }
 
+details{
+    display: inline-block;
+}
+
+details > summary{
+    font-weight: var(--font-bold-weight);
+    cursor: pointer;
+    margin: .5rem 0;
+}
+
+details > summary:focus{
+    outline: none;
+}
+
 /* Lists */
 ul, ol{
     padding-left: 1rem;
@@ -227,10 +261,11 @@ ul, ol{
 
 li{
     padding-left: .5rem;
+    margin: 2px 0;
 }
 
 dl dt{
-    font-weight: bold;
+    font-weight: var(--font-bold-weight);
 }
 dl dd{
     margin-left: 2rem;
@@ -258,7 +293,6 @@ table {
 
 thead{
     background-color: var(--color-primary);
-    color: var(--color-light-gray);
     text-transform: uppercase;
 }
 
@@ -267,9 +301,7 @@ tbody tr:nth-child(odd){
 }
 
 tfoot{
-    background: var(--color-med-gray);
-    color: var(--color-light-gray);
-    font-weight: bold;
+    background: var(--color-gray);
 }
 
 th, td{
@@ -278,6 +310,11 @@ th, td{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+th, tfoot td{
+    font-weight: var(--font-bold-weight);
+    color: var(--font-color-light);
 }
 
 table caption{
@@ -308,7 +345,7 @@ fieldset{
 
 legend{
     margin: 0 1rem;
-    font-weight: bold;
+    font-weight: var(--font-bold-weight);
 }
 
 form div{
@@ -317,7 +354,7 @@ form div{
 
 label{
     display: block;
-    font-weight: bold;
+    font-weight: var(--font-bold-weight);
     margin-bottom: .25rem;
 }
 
@@ -365,8 +402,9 @@ button, input[type=button]{
     border-radius: var(--border-radius);
     border: 2px solid var(--color-med-gray);
     color: var(--font-color-light);
-    font-weight: bold;
+    font-weight: var(--font-bold-weight);
     font-family: var(--font-family);
+    font-size: .875rem;
     cursor: pointer;
 }
 
@@ -376,7 +414,7 @@ button:hover, input[type=button]:hover{
 
 button[disabled], input[disabled]{
     background: var(--color-light-gray);
-    color: var(--color-med-gray);
+    color: var(--color-gray);
     cursor: not-allowed;
 }
 
