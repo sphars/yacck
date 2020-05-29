@@ -80,6 +80,10 @@ header a:hover, footer a:hover{
     padding-bottom: 1px;
 }
 
+header a:visited, footer a:visited{
+    color: var(--font-color-light)
+}
+
 header img{
     height: 50px;
     margin: .5rem 0;
