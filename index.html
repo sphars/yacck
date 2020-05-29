@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YACCK is classless, responsive, minimal CSS framework that focuses on HTML semantic elements.">
     <title>YACCK - Yet Another Classless CSS Kit</title>
 
     <link rel="stylesheet" type="text/css" href="yacck.css">
@@ -27,7 +28,7 @@
     <main>
         <section>
             <h1>YACCK - Yet Another Classless CSS Kit</h1>
-            <p>YACCK is a classless, responsive CSS kit (framework) that focuses on pure HTML semantic elements. It is inspired by many other similar minimal CSS frameworks, such as <a href="https://github.com/andybrewer/mvp">MVP.css</a>. Meant for use in simple websites and blogs.</p>
+            <p>YACCK is a classless, responsive CSS kit (framework) that focuses on pure HTML semantic elements. It is inspired by many other similar minimal CSS frameworks, such as <a href="https://github.com/andybrewer/mvp">MVP.css</a>. It is intended to be used on simple websites and blogs.</p>
         </section>
         
         <hr/>
@@ -73,8 +74,8 @@ p q r s t u v w x y z { | } ~ </pre>
 }</code></pre>
 
             <h2>Other</h2>
-            <p>Keyboard keys: <kbd>Ctrl</kbd></p>
-            <p><q>I'm not superstitious but I am a little stitious.</q> - Michael Scott</p>
+            <p>Keyboard keys: <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd></p>
+            <p>Quote: <q>I'm not superstitious but I am a little stitious.</q> - Michael Scott</p>
         </section>
 
         <section>
@@ -115,6 +116,7 @@ p q r s t u v w x y z { | } ~ </pre>
         <section>
             <h1>Tables</h1>
             <p>Note: I'd prefer to have the tables be full-width, with <code>overscroll-x</code> for large tables that expand beyond the viewport. However, without a wrapper around it, I haven't found clean CSS-only solution. A <code>div</code> wrapper can't be targeted via CSS without a class or adding some attribute. There may be a solution I am unaware of. For now, tables are full-width and if the table content is too large, the content will be clipped on as viewport width is reduced. This may change, depending how I feel about adding extra stuff.</p>
+
             <table>
                 <caption>This is a table caption.</caption>
                 <thead>
@@ -168,6 +170,8 @@ p q r s t u v w x y z { | } ~ </pre>
                 <h2>An Example Form</h2>
                 <p>Form elements should be a combination of a label and an input wrapped in a block-level element such as a <code>div</code>. Checkboxes and radio buttons should be wrapped in a <code>li</code> element, wrapped in a <code>ul</code> element.</p>
 
+                <p>Note: These inputs are not yet styled, other than adjusting the sizing. As soon as I figure out how to adjust the styles, I work on that.</p>
+
                 <fieldset>
                     <legend>Common Inputs</legend>
 
@@ -179,6 +183,11 @@ p q r s t u v w x y z { | } ~ </pre>
                     <div>
                         <label for="password">Password</label>
                         <input type="password" id="password">
+                    </div>
+
+                    <div>
+                        <label for="disabledInput">Disabled Input</label>
+                        <input type="text" id="disabledInput" disabled>
                     </div>
 
                     <ul>
@@ -260,17 +269,14 @@ p q r s t u v w x y z { | } ~ </pre>
                     </div>
 
                     <div>
-                        <label for="number">Number</label>
-                        <input type="number" id="number" min="0" max="100" step="1">
-                    </div>
-
-                    <div>
                         <label for="range">Range</label>
+                        <i>Not yet styled</i>
                         <input type="range" id="range" min="0" max="100" step="1">
                     </div>
                     
                     <div>
                         <label for="filePicker">File Picker</label>
+                        <i>Not yet styled</i>
                         <input type="file" id="filePicker">
                     </div>
 
@@ -281,7 +287,7 @@ p q r s t u v w x y z { | } ~ </pre>
 
                     <div>
                         <button type="submit">Submit</button>
-                        <button type="button">Button</button>
+                        <input type="button" value="Button"> 
                         <button type="button" disabled>Disabled</button>
                     </div>
                 </fieldset>
@@ -292,7 +298,7 @@ p q r s t u v w x y z { | } ~ </pre>
     <footer>
         <div>
             <p>Created by Spencer Harston</p>
-            <p>Source: <a href="https://github.com/spncrhrstn/yacck">Github</a></p>
+            <p><a href="https://github.com/spncrhrstn/yacck">View source on Github</a></p>
         </div>
     </footer>
 </body>
