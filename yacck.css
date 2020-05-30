@@ -188,7 +188,7 @@ p{
 }
 
 blockquote{
-    border-left: 4px solid var(--color-primary);
+    border-left: 6px solid var(--color-primary);
     padding: .75rem 2rem;
     margin: 1rem 0;
     background: var(--color-bg-med);
@@ -204,16 +204,19 @@ pre, code, kbd{
 }
 
 pre{
-    white-space: wrap;
+    white-space: pre;
     overflow-x: auto;
+    background-color: var(--color-primary);
+    color: var(--color-light-gray);
+    padding: 1rem 2rem;
 }
 
 pre code{
-    display: block;
-    background: var(--color-primary);
-    color: var(--color-light-gray); 
-    border-left: 4px solid var(--color-accent);
-    padding: 1rem 2rem;
+    display: inline-block;
+    border-left: 6px solid var(--color-accent);
+    background-color: inherit;
+    margin: -1rem -2rem;
+    padding: 1rem calc(2rem - 6px);
 }
 
 code {
