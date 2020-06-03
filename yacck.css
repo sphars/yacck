@@ -1,7 +1,7 @@
 :root{
     /* Sizing */
-    --width-content: 1200px;
-    --width-form: 600px;
+    --width-content: 64rem;
+    --width-form: 36rem;
     --border-radius: 6px;
 
     /* Colors */
@@ -16,9 +16,9 @@
     --color-bg: #fdfdfd;
     --color-bg-med: #ececec;
 
+    /* Fonts */
     --font-family: 'Rubik', Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
     --font-monospace: 'Inconsolata', Consolas, monospace;
-    --font-base-size: 16px;
     --font-bold-weight: 500;
     --font-color-dark: #272727;
     --font-color-light: #f8f8f8;
@@ -28,6 +28,7 @@
 /* Layout */
 html{
     box-sizing: border-box;
+    font-size: 100%;
 }
 
 *, *:before, *:after{
@@ -47,7 +48,6 @@ body{
     background-color: var(--color-bg);
     color: var(--font-color-dark);
     font-family: var(--font-family);
-    font-size: var(--font-base-size);
 }
 
 header, nav, main, footer{
@@ -57,7 +57,7 @@ header, nav, main, footer{
 
 /* Header and Footer */
 body > header, body > footer{
-    background: var(--color-primary);
+    background-color: var(--color-primary);
     color: var(--font-color-light);
 }
 
@@ -69,28 +69,19 @@ body > header div, body > footer div{
     max-width: var(--width-content);
     width: 100%;
     margin: 0 auto;
-    padding: .25rem 1rem;
+    padding: .5rem 1rem;
 }
 
 body > header a, body > footer a{
     color: var(--color-primary-tint);
 }
 
-body > header a:hover, body > footer a:hover{
-    border-bottom: 2px solid var(--color-primary-tint);
-    padding-bottom: 1px;
-}
-
 body > header a:visited, body > footer a:visited{
     color: var(--color-primary-tint);
 }
 
-body > header a:visited:hover, body > footer a:visited:hover{
-    border-bottom: 2px solid var(--color-primary-tint);
-}
-
 body > header img{
-    height: 50px;
+    height: 3rem;
     margin: .5rem 1rem .5rem 0;
     max-width: 100%;
 }
@@ -102,13 +93,7 @@ body > header a[href="/"]{
     align-items: center;
     font-size: 2.5rem;
     color: var(--font-color-light);
-}
-
-body > header a[href="/"]:hover{
-    /* this takes care of the hover effect on the brand logo in the header */
-    border: none;
     padding-bottom: 0;
-    filter: brightness(85%);
 }
 
 body > header p, body > footer p{
@@ -118,7 +103,7 @@ body > header p, body > footer p{
 /* Navigation */
 body > nav{
     margin: 0 auto;
-    background: var(--color-secondary);
+    background-color: var(--color-secondary);
 }
 
 body > nav ul{
@@ -144,19 +129,11 @@ body > nav ul li{
 body > nav ul li a{
     color: var(--color-light-gray);
     padding: .5rem 0;
+    text-decoration: none;
 }
 
 body > nav ul li a:visited{
     color: var(--color-light-gray);
-}
-
-body > nav ul li a:hover{
-    color: var(--color-light-gray);
-}
-
-body > nav ul li a:visited:hover{
-    color: var(--color-light-gray);
-    border-bottom: 2px solid var(--color-light-gray);
 }
 
 /* Main content */
@@ -180,11 +157,10 @@ b, strong{font-weight: var(--font-bold-weight);}
 
 a{
     color: var(--color-primary-tint);
-    text-decoration: none;
 }
 
 a:hover{
-    border-bottom: 2px solid var(--color-secondary);
+    filter: brightness(85%);
 }
 
 a:visited {
@@ -199,7 +175,7 @@ blockquote{
     border-left: 6px solid var(--color-primary);
     padding: .75rem 2rem;
     margin: 1rem 0;
-    background: var(--color-bg-med);
+    background-color: var(--color-bg-med);
 }
 
 blockquote p{
@@ -228,13 +204,14 @@ pre code{
 }
 
 code {
-    background: var(--color-bg-med);
+    background-color: var(--color-bg-med);
     padding: 0 4px;
     word-wrap: break-word;
 }
 
 mark{
     background-color: var(--color-accent);
+    padding: 0 1px;
 }
 
 kbd{
@@ -309,11 +286,11 @@ thead{
 }
 
 tbody tr:nth-child(odd){
-    background: #dbdbdb;
+    background-color: #dbdbdb;
 }
 
 tfoot{
-    background: var(--color-gray);
+    background-color: var(--color-gray);
 }
 
 th, td{
@@ -345,7 +322,7 @@ form{
     border: 2px solid var(--color-med-gray);
     border-radius: var(--border-radius);
     padding: .5rem 1rem;
-    background: var(--color-bg);
+    background-color: var(--color-bg);
     max-width: var(--width-form);
     margin: 2rem auto;
 }
@@ -401,14 +378,14 @@ input[type=checkbox], input[type=radio]{
 }
 
 input[type=color]{
-    padding: 0 1px;
+    padding: 2px 3px;
     height: 2rem;
     width: 2rem;
 }
 
 button, input[type=button]{
     width: auto;
-    background: var(--color-primary);
+    background-color: var(--color-primary);
     display: inline-block;
     padding: .5rem 1rem;
     margin: .5rem;    
@@ -422,11 +399,11 @@ button, input[type=button]{
 }
 
 button:hover, input[type=button]:hover{
-    background: var(--color-primary-tint);
+    background-color: var(--color-primary-tint);
 }
 
 button[disabled], input[disabled]{
-    background: var(--color-light-gray);
+    background-color: var(--color-light-gray);
     color: var(--color-gray);
     cursor: not-allowed;
 }
