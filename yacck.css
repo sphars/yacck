@@ -176,10 +176,6 @@ p, li, dd{
     line-height: 1.5rem;
 }
 
-p{
-    margin-bottom: 2rem;
-}
-
 blockquote{
     border-left: 6px solid var(--color-primary);
     padding: .75rem 2rem;
