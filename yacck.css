@@ -73,11 +73,11 @@ body > header div, body > footer div{
 }
 
 body > header a, body > footer a{
-    color: var(--color-primary-tint);
+    color: var(--font-color-light);
 }
 
 body > header a:visited, body > footer a:visited{
-    color: var(--color-primary-tint);
+    color: var(--font-color-light);
 }
 
 body > header img{
