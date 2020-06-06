@@ -1,6 +1,6 @@
 :root{
     /* Sizing */
-    --width-content: 64rem;
+    --width-content: 60rem;
     --width-form: 36rem;
     --border-radius: 6px;
 
@@ -100,13 +100,13 @@ body > header p, body > footer p{
     margin: .5rem 0;
 }
 
-/* Navigation */
-body > nav{
+/* Main Site Navigation */
+body > header nav{
     margin: 0 auto;
     background-color: var(--color-secondary);
 }
 
-body > nav ul{
+body > header nav ul{
     max-width: var(--width-content);
     width: 100%;
     display: flex;
@@ -118,7 +118,7 @@ body > nav ul{
     margin: 0 auto;
 }
 
-body > nav ul li{
+body > header nav ul li{
     display: inline-block;
     text-align: center;
     flex-grow: 1;
@@ -126,13 +126,13 @@ body > nav ul li{
     padding: 0;
 }
 
-body > nav ul li a{
+body > header nav ul li a{
     color: var(--color-light-gray);
     padding: .5rem 0;
     text-decoration: none;
 }
 
-body > nav ul li a:visited{
+body > header nav ul li a:visited{
     color: var(--color-light-gray);
 }
 
