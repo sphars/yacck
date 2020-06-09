@@ -86,7 +86,7 @@ body > header img{
     max-width: 100%;
 }
 
-body > header a[href="/"]{
+body > header > div a[href="/"]{
     display: flex;
     flex-direction: row;
     justify-content: center;
