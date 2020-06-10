@@ -18,7 +18,7 @@
 
     /* Fonts */
     --font-family: 'Rubik', Roboto, 'Segoe UI', Helvetica, Arial, sans-serif;
-    --font-monospace: 'Fira Mono', 'Roboto Mono', Consolas, 'Courier New', courier, monospace;
+    --font-monospace: 'Fira Mono', 'Roboto Mono', Consolas, 'Courier New', Courier, monospace;
     --font-color-dark: #272727;
     --font-color-light: #f8f8f8;
     --font-color-med: #6e7075;
