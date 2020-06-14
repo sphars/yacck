@@ -263,6 +263,10 @@ dd{
     margin-bottom: .5rem;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* Horizontal Row */
 hr{
     margin: 1rem auto;
