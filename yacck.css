@@ -189,7 +189,7 @@ pre, code, kbd{
 }
 
 pre{
-    white-space: pre;
+    white-space: pre-wrap;
     overflow-x: auto;
     background-color: var(--color-primary);
     color: var(--color-light-gray);
