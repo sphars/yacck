@@ -10,9 +10,9 @@ Currently a work in progress.
 ## Installation
 You can download the `yacck.css` file from GitHub and include it in your project:
 ```html
-<link rel="stylesheet" href="path/to/yacck.min.css">
+<link rel="stylesheet" href="path/to/yacck.css">
 ```
- or use a CDN:
+ or use a CDN (minimized file):
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/spncrhrstn/yacck/yacck.min.css">
 ```
