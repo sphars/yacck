@@ -1,7 +1,7 @@
 :root{
     /* Sizing */
     --width-content: 60rem;
-    --width-form: 36rem;
+    --width-form: 60rem;
     --border-radius: 6px;
 
     /* Colors */
@@ -376,6 +376,9 @@ input, select, textarea{
     margin: 0;
     padding: 6px;
     display:inline-block;
+    font-family: inherit;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-med-gray);
 }
 
 input[type=checkbox], input[type=radio]{
@@ -394,7 +397,6 @@ button, input[type=button]{
     background-color: var(--color-primary);
     display: inline-block;
     padding: .5rem 1rem;
-    margin: .5rem;    
     border-radius: var(--border-radius);
     border: 2px solid var(--color-med-gray);
     color: var(--font-color-light);
