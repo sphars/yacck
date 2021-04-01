@@ -16,7 +16,7 @@ You can download the `yacck.css` file from GitHub and include it in your project
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/spncrhrstn/yacck/yacck.min.css">
 ```
-To inlcude fonts, see [Fonts note](###Fonts) below.
+To include fonts, see [Fonts note](#fonts) below.
 
 ## Goals
 * Simple universal layout
@@ -26,7 +26,7 @@ To inlcude fonts, see [Fonts note](###Fonts) below.
 * Customization
 
 ## HTML Layout
-YACCK follows a somewhat opinionated way of laying your HTML. See the [demo page](https://spncrhrstn.github.io/yacck/) for an example layout.
+YACCK follows a somewhat opinionated way of laying your HTML. See the `index.html` file and the [demo page](https://spncrhrstn.github.io/yacck/) for an example layout.
 
 ## Customizing
 YACCK uses CSS variables in the `:root` element to define customizable values, such as sizing, colors and fonts.  
