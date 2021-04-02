@@ -405,6 +405,16 @@ button, input[type=button]{
     cursor: pointer;
 }
 
+button[type=reset]{
+    background-color: var(--color-med-gray);
+    border-color: var(--color-gray);
+}
+
+button[type=reset]:hover{
+    background-color: var(--color-light-gray);
+    color: var(--font-color-med);
+}
+
 button:hover, input[type=button]:hover{
     background-color: var(--color-primary-tint);
 }
