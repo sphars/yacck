@@ -19,22 +19,25 @@ You can download the `yacck.css` file from GitHub and include it in your project
 To include fonts, see [Fonts note](#fonts) below.
 
 ## Goals
-* Simple universal layout
+* Simple semantic layout
 * Cross-browser support
 * Responsive
 * Accessible (as much as possible)
 * Customization
+* Dark/light mode (eventually)
 
-## HTML Layout
+## Usage
+
+### HTML Layout
 YACCK follows a somewhat opinionated way of laying your HTML. See the `index.html` file and the [demo page](https://spncrhrstn.github.io/yacck/) for an example layout.
 
-## Customizing
+### Customizing
 YACCK uses CSS variables in the `:root` element to define customizable values, such as sizing, colors and fonts.  
 
 You can override the defaults in your own CSS file in a `:root` rule. 
 
 ### Fonts
-By default, YACCK uses a font stack of system fonts for sans-serif and monospace, so no external fonts required. However, you are welcome to use your own fonts. The following fonts (in my opinion) work well:
+By default, YACCK uses a font stack of system fonts for sans-serif and monospace, so no external fonts are required. However, you are welcome to use your own fonts. The following fonts (in my opinion) work well:
 
 Sans-Serif
 * [**Rubik**](https://fonts.google.com/specimen/Rubik)
@@ -57,7 +60,7 @@ Add a link to the fonts in your HTML's `<head>`:
 <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Rubik&display=swap" rel="stylesheet">
 ```
 
-In your own CSS file, add a reference to the fonts in the `:root` element:
+In your own CSS file, add a reference to your selected fonts in the `:root` element:
 
 ```css
 :root{
