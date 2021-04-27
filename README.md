@@ -24,7 +24,7 @@ To include fonts, see [Fonts note](#fonts) below.
 * Responsive
 * Accessible (as much as possible)
 * Customization
-* Dark/light mode (eventually)
+* Dark/light mode (based on prefers-color-scheme, currently WIP)
 
 ## Usage
 
