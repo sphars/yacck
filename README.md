@@ -1,7 +1,7 @@
 # YACCK
 YACCK - Yet Another Classless CSS Kit  
 
-[Live demo](https://spncrhrstn.github.io/yacck/)  
+[Live demo](https://sphars.github.io/yacck/)  
 
 YACCK is a classless, responsive CSS kit/framework that focuses on pure HTML elements. It is inspired by many other similar minimal CSS frameworks, such as [MVP.css](https://github.com/andybrewer/mvp) and [new.css](https://github.com/xz/new.css). Meant for use in simple websites and blogs.
 
@@ -14,7 +14,7 @@ You can download the `yacck.css` file from GitHub and include it in your project
 ```
  or use a CDN (minimized file):
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/spncrhrstn/yacck/yacck.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sphars/yacck/yacck.min.css">
 ```
 To include fonts, see [Fonts note](#fonts) below.
 
@@ -29,7 +29,7 @@ To include fonts, see [Fonts note](#fonts) below.
 ## Usage
 
 ### HTML Layout
-YACCK follows a somewhat opinionated way of laying your HTML. See the `index.html` file and the [demo page](https://spncrhrstn.github.io/yacck/) for an example layout.
+YACCK follows a somewhat opinionated way of laying your HTML. See the `index.html` file and the [demo page](https://sphars.github.io/yacck/) for an example layout.
 
 ### Customizing
 YACCK uses CSS variables in the `:root` element to define customizable values, such as sizing, colors and fonts.  
