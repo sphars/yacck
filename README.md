@@ -73,3 +73,6 @@ In your own CSS file, add a reference to your selected fonts in the `:root` elem
 
 ## Acknowledgements
 Example page based on [HTML5 Test Page](https://github.com/cbracco/html5-test-page). Inspired by [MVP.css](https://github.com/andybrewer/mvp), [new.css](https://github.com/xz/new.css) and other minimal CSS frameworks (see list [here](https://github.com/dohliam/dropin-minimal-css)).
+
+## License
+[MIT](/LICENSE) 
