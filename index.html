@@ -34,12 +34,26 @@
         <section>
             <h1>YACCK - Yet Another Classless CSS Kit</h1>
             <p>YACCK is a <b>classless</b>, responsive CSS kit that focuses on pure HTML semantic elements. It is inspired by many other similar minimal CSS frameworks, such as <a href="https://github.com/andybrewer/mvp">MVP.css</a> and <a href="https://github.com/xz/new.css">new.css</a>. It is intended to be used on simple websites and blogs.</p>
-            <p>View the source on <a href="https://github.com/sphars/yacck/">GitHub</a>.</p>
+            <p>This is a work in (slow) progress. View the source on <a href="https://github.com/sphars/yacck/">GitHub</a>.</p>
+
+            <h2>Install</h2>
+            <p>You can download the `yacck.css` file from GitHub and include it in your project:</p>
+<pre><code>&lt;link rel="stylesheet" href="path/to/yacck.css"&gt;
+</code>
+</pre>
+            <p>or use a CDN (minimized file):</p>
+<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sphars/yacck/yacck.min.css"&gt;
+</code>
+</pre>
+                
+            <p>For more details, including customizing and fonts, see the <a href="https://github.com/sphars/yacck/#customizing">GitHub readme</a>.</p>
         </section>
         
         <hr/>
 
         <section>
+            <p>The following is an example of how various elements are styled. Please see the <a href="https://github.com/sphars/yacck/blob/master/index.html">source code of this page</a> for the markup structure.</p>
+            
             <h1>Text Elements</h1>
             <h2>Headings</h2>
             <h1>Header 1</h1>
@@ -84,7 +98,7 @@ p q r s t u v w x y z { | } ~
             <p>Wrap your <code>&lt;code&gt;</code> element in a <code>&lt;pre&gt;</code> element to display it as a block.</p>
 <pre>
 <code>&lt;div&gt;
-    &lt;p&gt;This is a very important paragraph.It goes on and on and on and on...&lt;p&gt;
+    &lt;p&gt;This is a very important paragraph. It goes on and on and on and on...&lt;p&gt;
 &lt;div&gt;
 </code>
 </pre>
@@ -128,6 +142,7 @@ p q r s t u v w x y z { | } ~
 
         <section>
             <h1>Details</h1>
+            <p>Also sometimes referred to as an accordion element.</p>
             <details>
                 <summary>More Details</summary>
                 <p>This is the extra details you need to know.</p>
